@@ -12,4 +12,4 @@ Mi sono permesso di aggiungere una piccola funzionalità che permette di poter v
 
 In più la Modifica di un Libro può anche permettere di non modificare nulla se si lasciasse tutto vuoto, oppure si può modificare solo un campo e il resto può essere tutto vuoto o nullo.
 
-Tutti i vari nomi (che siano di categoria, di editoria, di Autore, ecc...) non posso essere messi alcun tipo di caratteri speciali o numeri.
+Non si possono mettere alcun tipo di caratteri speciali o numeri all'interno dei vari nomi (che siano di categoria, di editoria, di Autore, ecc...)
