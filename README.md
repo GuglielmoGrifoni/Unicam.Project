@@ -1,5 +1,5 @@
 # Unicam.Project
-Lo script del Database è il file con il nome "ScriptEsameParadigmi.sql" (qualora si necessitasse dell'username e password, sono entrambi "paradigmi" -> come lo si può anche vedere nel file appsettings.json) //SCRIVERE A FEDE SE E' COSI'
+Lo script del Database è il file con il nome "ScriptEsameParadigmi.sql" (qualora si necessitasse dell'username e password, sono entrambi "paradigmi" -> come lo si può anche vedere nel file appsettings.json)
 
 Per quanto riguarda il funzionamento nello swagger: bisogna prima creare un nuovo utente attraverso il "Register", poi con il "Login" (mettendo l'email e la password) verrà generato un Token JWT che permetterà poi di accedere a tutte le altre funzionalità del programma. (N.B. bisogna prima mettere la parola "Bearer" seguita poi dal token che verrà generato in risposta al corretto login dell'utente)
 
