@@ -10,6 +10,8 @@ Per quanto riguarda la modifica e l'eliminazione del libro, ho deciso di inserir
 
 Mi sono permesso di aggiungere una piccola funzionalità che permette di poter vedere tutte le categorie da noi create.
 
-In più la Modifica di un Libro può anche permettere di non modificare nulla se si lasciasse tutto vuoto, oppure si può modificare solo un campo e il resto può essere tutto vuoto o nullo.
+In più la Modifica di un Libro può anche permettere di non modificare nulla se si lasciasse tutto vuoto, oppure si può modificare solo un campo e il resto può essere tutto vuoto o nullo -> ovviamente si può anche decidere di modificare tutti i campi.
 
-Non si possono mettere alcun tipo di caratteri speciali o numeri all'interno dei vari nomi (che siano di categoria, di editoria, di Autore, ecc...)
+L'aggiunta di un nuovo libro non sarà consentita se il nome del libro, il nome dell'autore e la data di pubblicazione coincidono con quelli di un altro libro già presente.
+
+Non si possono mettere alcun tipo di caratteri speciali o numeri all'interno dei vari nomi (che siano di categoria, di editoria, di Autore, ecc...) -> ovviamente questo non si applica alla Password.
