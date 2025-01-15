@@ -1,4 +1,5 @@
 ﻿using Unicam.Project.Application.Abstractions.Services;
+using Unicam.Project.Application.Models.Dtos;
 using Unicam.Project.Application.Models.Responses;
 using Unicam.Project.Application.Result;
 using Unicam.Project.Models.Entities;
@@ -34,7 +35,7 @@ namespace Unicam.Project.Application.Services
             return new RegisterResult
             {
                 Success = true,
-                Utente = new CreateUtenteResponse(utente)
+                Utente = utente
             };
         }
 
@@ -60,7 +61,7 @@ namespace Unicam.Project.Application.Services
 
         private bool VerificaPassword(string password, string hash)
         {
-            return BCrypt.Net.BCrypt.Verify(password.Trim(), hash.Trim());
+            return BCrypt.Net.BCrypt.Verify(password, hash.Trim());
         }
     }
 }

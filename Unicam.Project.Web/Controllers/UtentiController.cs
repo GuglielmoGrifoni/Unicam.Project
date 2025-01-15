@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Unicam.Project.Application.Abstractions.Services;
 using Unicam.Project.Application.Factories;
+using Unicam.Project.Application.Models.Dtos;
 using Unicam.Project.Application.Models.Requests;
 using Unicam.Project.Application.Models.Responses;
 using Unicam.Project.Application.Services;
@@ -34,7 +35,9 @@ namespace Unicam.Project.Web.Controllers
                 return Conflict(ResponseFactory.WithError(result.ErrorMessage));
             }
 
-            return Ok(ResponseFactory.WithSuccess(result.Utente));
+            var response = new CreateUtenteResponse(result.Utente);
+
+            return Ok(ResponseFactory.WithSuccess(response));
         }
 
 
@@ -55,7 +58,10 @@ namespace Unicam.Project.Web.Controllers
                 Cognome = utente.Cognome
             });
 
-            return Ok(ResponseFactory.WithSuccess(new { Token = token }));
+            // Creazione della response con il token
+            var response = new CreateTokenResponse(token);
+
+            return Ok(ResponseFactory.WithSuccess(response));
         }
     }
 }

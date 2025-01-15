@@ -1,16 +1,15 @@
-﻿using Unicam.Project.Models.Entities;
+﻿using Unicam.Project.Application.Models.Dtos;
+using Unicam.Project.Models.Entities;
 
 namespace Unicam.Project.Application.Models.Responses
 {
     public class CategoriaResponse
     {
-        public int IdCategoria { get; set; }
-        public string Nome { get; set; } = string.Empty;
+        public CategoriaDto Categoria { get; set; }
 
         public CategoriaResponse(Categoria categoria)
         {
-            IdCategoria = categoria.IdCategoria;
-            Nome = categoria.Nome.Trim();
+            Categoria = new CategoriaDto(categoria);
         }
     }
 

@@ -45,8 +45,8 @@ namespace Unicam.Project.Application.Validators
                 .WithMessage("Il campo password non può essere nullo")
                 .MinimumLength(6)
                 .WithMessage("Il campo password deve essere almeno lungo 6 caratteri")
-                .RegEx(@"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()_+{}[\]:;<>,.?~\\-]).{6,}$",
-                    "Il campo password deve essere lungo almeno 6 caratteri e deve contenere almeno un carattere maiuscolo, uno minuscolo, un numero e un carattere speciale");
+                .RegEx(@"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()_+{}[\]:;<>,.?~\\-])\S{6,}$",
+                    "Il campo password deve essere lungo almeno 6 caratteri, non deve avere spazi vuoti e deve contenere almeno un carattere maiuscolo, uno minuscolo, un numero e un carattere speciale");
         }
     }
 }
